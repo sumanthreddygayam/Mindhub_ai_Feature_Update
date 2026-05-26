@@ -63,7 +63,7 @@ if "linked_blocks" not in st.session_state:
 def get_model():
 
     return ChatMistralAI(
-        model="mistral-small-2506"
+        model="mistral-small-2506",
         api_key=st.secrets["MISTRAL_API_KEY"]
     )
 
