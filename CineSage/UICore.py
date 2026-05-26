@@ -64,6 +64,7 @@ def get_model():
 
     return ChatMistralAI(
         model="mistral-small-2506"
+        api_key=st.secrets["MISTRAL_API_KEY"]
     )
 
 model = get_model()
