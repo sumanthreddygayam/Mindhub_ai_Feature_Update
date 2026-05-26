@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+
+    --bg: #F5F4F1;
+    --panel: #FFFFFF;
+    --border: #E7E3DC;
+    --text: #171717;
+    --muted: #8E8B84;
+
+    --accent: #7C4A1D;
+    --accent-soft: #F4ECE5;
+}
+
+html,
+body,
+.stApp,
+[data-testid="stAppViewContainer"],
+.main,
+.block-container {
+
+    background: var(--bg) !important;
+
+    height: 100vh !important;
+    max-height: 100vh !important;
+
+    overflow: hidden !important;
+
+    font-family: 'Inter', sans-serif !important;
+}
+
+.block-container {
+
+    padding-top: 12px !important;
+    padding-bottom: 0 !important;
+
+    max-width: 100% !important;
+}
+
+#MainMenu,
+header,
+footer {
+
+    visibility: hidden;
+}
+
+/* ============================================================
+   COLUMNS
+   ============================================================ */
+
+[data-testid="column"] {
+
+    height: 100vh !important;
+
+    overflow: hidden !important;
+}
+
+/* ============================================================
+   CONTAINERS
+   ============================================================ */
+
+[data-testid="stVerticalBlockBorderWrapper"] {
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+    padding: 14px;
+
+    margin-bottom: 14px;
+}
+
+/* ============================================================
+   TITLES
+   ============================================================ */
+
+.title-row {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin-bottom: 2px;
+
+    color: var(--text);
+}
+
+.subtitle {
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    margin-bottom: 14px;
+}
+
+.badge {
+
+    background: var(--accent-soft);
+
+    color: var(--accent);
+
+    border-radius: 999px;
+
+    padding: 3px 10px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+/* ============================================================
+   CARDS
+   ============================================================ */
+
+.card-title {
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    margin-bottom: 12px;
+
+    color: #161616;
+}
+
+.card-content {
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    color: #444;
+}
+
+/* ============================================================
+   CHAT
+   ============================================================ */
+
+.query-box {
+
+    background: #111;
+
+    color: white;
+
+    width: fit-content;
+
+    border-radius: 999px;
+
+    padding: 10px 16px;
+
+    margin-bottom: 20px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+.chat-response {
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+    color: #222;
+
+    overflow-wrap: break-word;
+}
+
+/* ============================================================
+   INPUTS
+   ============================================================ */
+
+.stTextArea textarea {
+
+    border-radius: 18px !important;
+
+    border: 1px solid var(--border) !important;
+
+    background: white !important;
+
+    font-size: 14px !important;
+
+    padding: 12px !important;
+
+    min-height: 95px !important;
+
+    max-height: 95px !important;
+}
+
+.stButton button {
+
+    background: var(--accent) !important;
+
+    color: white !important;
+
+    border: none !important;
+
+    border-radius: 16px !important;
+
+    height: 58px;
+
+    font-size: 16px !important;
+
+    font-weight: 700 !important;
+
+    transition: all 0.18s ease !important;
+
+    box-shadow:
+        0 4px 14px rgba(124, 74, 29, 0.18);
+}
+
+.stButton button:hover {
+
+    transform: translateY(-1px);
+
+    background: #6D3F17 !important;
+
+    box-shadow:
+        0 8px 20px rgba(124, 74, 29, 0.24);
+}
+/* tighter input/button spacing */
+
+.stTextArea {
+
+    margin-bottom: 0.35rem !important;
+}
+/* ============================================================
+   INFO
+   ============================================================ */
+
+[data-testid="stInfo"] {
+
+    border-radius: 16px !important;
+}
+
+/* ============================================================
+   REMOVE OVERFLOW
+   ============================================================ */
+
+.element-container {
+
+    margin-bottom: 0.4rem !important;
+}
+
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
+
+::-webkit-scrollbar {
+
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: #D8D3CB;
+
+    border-radius: 999px;
+}
+
+
+/* ============================================================
+   LINKED MEMORY
+   ============================================================ */
+
+.linked-memory-box {
+
+    background: #F4ECE5;
+
+    border: 1px solid #E4D6C7;
+
+    color: #6E4420;
+
+    padding: 12px 14px;
+
+    border-radius: 14px;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    margin-bottom: 12px;
+}
+
+/* ============================================================
+   FIX PAGE SCROLL
+   ============================================================ */
+
+html,
+body,
+.stApp,
+[data-testid="stAppViewContainer"],
+.main,
+.block-container {
+
+    height: 100vh !important;
+    max-height: 100vh !important;
+
+    overflow: hidden !important;
+}
+
+/* ============================================================
+   COLUMN FIX
+   ============================================================ */
+
+[data-testid="column"] {
+
+    height: 100vh !important;
+
+    overflow: hidden !important;
+}
+
+/* ============================================================
+   INNER SCROLL ONLY
+   ============================================================ */
+
+[data-testid="stVerticalBlock"] > div[style*="overflow: auto"] {
+
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+/* ============================================================
+   INPUT SIZE
+   ============================================================ */
+
+.stTextArea textarea {
+
+    min-height: 95px !important;
+    max-height: 95px !important;
+}
+
+/* ============================================================
+   BIGGER ASK BUTTON
+   ============================================================ */
+
+.stButton button {
+
+    height: 58px !important;
+
+    font-size: 16px !important;
+
+    font-weight: 700 !important;
+
+    border-radius: 16px !important;
+}
+
+/* prevent ask section clipping */
+
+.stTextArea {
+
+    margin-top: 8px !important;
+}
+
+.stButton {
+
+    margin-top: 4px !important;
+}
+
+/* linked memory compact */
+
+.linked-memory-box {
+
+    padding: 10px 12px !important;
+
+    font-size: 11px !important;
+
+    margin-bottom: 8px !important;
+}
+
+/* ============================================================
+   COMPACT COLLECTION BLOCKS
+   ============================================================ */
+
+/* left panel cards only */
+
+[data-testid="column"]:nth-of-type(1)
+[data-testid="stVerticalBlockBorderWrapper"] {
+
+    padding: 10px !important;
+
+    border-radius: 16px !important;
+
+    margin-bottom: 8px !important;
+}
+/* ============================================================
+   MINI COLLECTION CARDS
+   ============================================================ */
+
+[data-testid="column"]:nth-of-type(1)
+[data-testid="stVerticalBlockBorderWrapper"] {
+
+    padding: 10px !important;
+
+    border-radius: 16px !important;
+
+    margin-bottom: 8px !important;
+}
+
+/* title */
+
+.mini-collection-title {
+
+    font-size: 13px;
+
+    font-weight: 650;
+
+    line-height: 1.35;
+
+    margin-bottom: 10px;
+
+    color: #1B1B1B;
+
+    overflow: hidden;
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: 2;
+
+    -webkit-box-orient: vertical;
+}
+
+/* icon buttons */
+
+[data-testid="column"]:nth-of-type(1)
+.stButton button {
+
+    height: 34px !important;
+
+    min-height: 34px !important;
+
+    padding: 0 !important;
+
+    border-radius: 10px !important;
+
+    font-size: 14px !important;
+}
+
+/* reduce button spacing */
+
+[data-testid="column"]:nth-of-type(1)
+.element-container {
+
+    margin-bottom: 0.15rem !important;
+}
+/* collection title */
+
+[data-testid="column"]:nth-of-type(1)
+.card-title {
+
+    font-size: 13px !important;
+
+    margin-bottom: 4px !important;
+
+    line-height: 1.3 !important;
+}
+
+/* collection id */
+
+[data-testid="column"]:nth-of-type(1)
+.stCaption {
+
+    font-size: 9px !important;
+
+    margin-bottom: 6px !important;
+}
+
+/* collection buttons */
+
+[data-testid="column"]:nth-of-type(1)
+.stButton button {
+
+    height: 25px !important;
+
+    font-size: 10px !important;
+
+    border-radius: 12px !important;
+
+    margin-top: 1.5px !important;
+}
+
+/* reduce spacing between buttons */
+
+[data-testid="column"]:nth-of-type(1)
+.element-container {
+
+    margin-bottom: 0.2rem !important;
+}
